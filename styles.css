@@ -1,0 +1,226 @@
+
+:root{
+  /* ### Primary */
+  --Light-red : hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  
+  /* ## Gradients */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+/* 
+### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+  background-color: var(--Pale-blue);
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0;
+}
+
+p{
+  font-size: 18px;
+}
+
+
+.attribution { 
+  /* height: 5vh; */
+
+  margin: 20px auto 10px;
+  font-size: 11px; text-align: center; }
+.attribution a { 
+  margin-bottom: 0;
+  color: hsl(228, 45%, 44%); }
+
+.container{
+  margin-top: 5%;
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--Pale-blue); */
+}
+
+.card{
+  /* width: 650px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 2rem;
+}
+
+.results{
+  width: 325px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px 20px; */
+  border-radius: 2rem;
+  background-image: linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+  padding-bottom: 30px;
+}
+
+.results h1{
+  padding-top: 5px;
+  padding-bottom: 20px;
+
+  color: var(--Light-lavender);
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-image: linear-gradient(to top, var(--Persian-blue-circle), var(--Violet-blue-circle));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.7;
+}
+
+.circle b{
+  padding-top: 32px;
+  color: var(--White);
+  font-size: 4rem;
+}
+
+.circle p{
+  color: var(--Light-lavender);
+}
+
+.results h2{
+  color: white;
+  font-size: 2rem;
+}
+
+.info{
+  margin: 0 auto 20px;
+  color: var(--Light-lavender);
+  text-align: center;
+  width: 250px;
+}
+
+h1{
+  font-size: 20px;
+}
+
+.summary{
+  width: 325px;
+  height: 450px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary h1{
+  color: var(--Dark-gray-blue);
+  align-self: flex-start;
+  padding-left: 10%;
+}
+
+
+.rows{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 5px auto;
+
+  border-radius: 10px;
+}
+
+.rows:nth-child(2) .row-text{
+  color: var(--Light-red);
+}
+.rows:nth-child(3) .row-text{
+  color: var(--Orangey-yellow);
+}
+.rows:nth-child(4) .row-text{
+  color: var(--Green-teal);
+}
+.rows:nth-child(5) .row-text{
+  color: var(--Cobalt-blue);
+}
+
+
+#reaction{
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+#memory{
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+#verbal{
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+#visual{
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.row-text{
+  position: relative;
+  right: 25px;
+}
+
+.summary b{
+  color: var(--Dark-gray-blue);
+}
+.summary p{
+  color: var(--Dark-gray-blue);
+}
+
+.btn{
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 80%;
+  border-radius: 2rem;
+  background-color: var(--Dark-gray-blue);
+  color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  border: none;
+}
+
+.btn:hover{
+  background-image: linear-gradient(to top, var(--Light-royal-blue-background), var(--Light-slate-blue-background));
+}
+
+
+@media  screen and (max-width:800px) {
+  body{
+    background-color: white;
+  }
+  .container{
+    margin: 0;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .results{
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .summary{
+    width: 100%;
+  }
+}
